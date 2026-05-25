@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,5 +7,251 @@
 </head>
 <body>
   <h1>Welcome to Version 1.0</h1>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Test Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Heebo',sans-serif;
+      background:
+        radial-gradient(circle at top left,#4f46e5 0%,transparent 30%),
+        radial-gradient(circle at bottom right,#06b6d4 0%,transparent 30%),
+        #0f172a;
+      color:white;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 0;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:800;
+      color:#38bdf8;
+    }
+
+    .menu{
+      display:flex;
+      gap:25px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:white;
+      transition:.3s;
+    }
+
+    .menu a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      min-height:80vh;
+      gap:50px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+    }
+
+    .hero-text h1{
+      font-size:64px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      font-size:20px;
+      color:#cbd5e1;
+      margin-bottom:30px;
+      max-width:600px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 28px;
+      border-radius:14px;
+      border:none;
+      font-size:16px;
+      cursor:pointer;
+      transition:.3s;
+      font-weight:600;
+    }
+
+    .btn-primary{
+      background:#38bdf8;
+      color:#0f172a;
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      background:#0ea5e9;
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,0.1);
+      color:white;
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.15);
+    }
+
+    .btn-secondary:hover{
+      transform:translateY(-3px);
+      background:rgba(255,255,255,0.2);
+    }
+
+    .card{
+      flex:1;
+      min-width:320px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.12);
+      backdrop-filter:blur(16px);
+      border-radius:24px;
+      padding:30px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    .card h2{
+      margin-bottom:20px;
+      color:#38bdf8;
+    }
+
+    .status{
+      display:flex;
+      justify-content:space-between;
+      margin-bottom:18px;
+      padding:14px;
+      border-radius:12px;
+      background:rgba(255,255,255,0.05);
+    }
+
+    .online{
+      color:#22c55e;
+      font-weight:bold;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px 0;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+      .hero-text h1{
+        font-size:42px;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <nav>
+      <div class="logo">MyCloudSite</div>
+
+      <div class="menu">
+        <a href="#">בית</a>
+        <a href="#">שירותים</a>
+        <a href="#">מערכת</a>
+        <a href="#">צור קשר</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+
+      <div class="hero-text">
+        <h1>Modern Cloud Deployment</h1>
+
+        <p>
+          דף בדיקה מודרני לפרויקט AWS + S3 + CloudFront עם עיצוב חדשני,
+          responsive מלא ואפקטים מתקדמים.
+        </p>
+
+        <div class="buttons">
+          <button class="btn btn-primary">Get Started</button>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Deployment Status</h2>
+
+        <div class="status">
+          <span>S3 Bucket</span>
+          <span class="online">ONLINE</span>
+        </div>
+
+        <div class="status">
+          <span>CloudFront</span>
+          <span class="online">ACTIVE</span>
+        </div>
+
+        <div class="status">
+          <span>GitHub Actions</span>
+          <span class="online">RUNNING</span>
+        </div>
+
+        <div class="status">
+          <span>AWS Region</span>
+          <span>us-east-1</span>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 Modern Deployment Test Page
+    </footer>
+
+  </div>
+
 </body>
 </html>
